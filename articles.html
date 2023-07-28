@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#382312">
+		<meta name="theme-color" content="#382312">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<aside>
+					<a href="/" class="logo">
+						<img src="images/logo.svg" alt="">
+					</a>
+
+					<div class="mob messengers">
+						<a href="tel:+78123542175">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone2"></use></svg>
+						</a>
+
+						<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+						</a>
+
+						<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+						</a>
+					</div>
+
+					<button class="mob_menu_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+					</button>
+
+					<div class="menu">
+						<div><a href="/">Главная</a></div>
+						<div><a href="/">Типовые проекты</a></div>
+						<div><a href="/">О компании</a></div>
+						<div><a class="active">Полезные статьи</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+
+					<div class="bottom">
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+78123542175">+7 812 354 21 75</a>
+							</div>
+
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<button class="calc_btn modal_btn" data-modal="order_modal">Рассчитать проект</button>
+					</div>
+				</aside>
+
+
+				<section class="page_head">
+					<div class="cont row">
+						<div class="breadcrumbs">
+							<span class="current">полезные статьи</span>
+						</div>
+
+						<div class="city modal_cont">
+							<div class="label">Ваш город:</div>
+
+							<button class="btn mini_modal_btn" data-modal-id="#city_modal">Санкт-Петербург</button>
+
+							<div class="mini_modal" id="city_modal">
+								<button class="close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+								</button>
+
+								<div class="title">Ваш город Москва?</div>
+
+								<div class="btns">
+									<button class="btn bg close_btn">Да, верно</button>
+
+									<button class="btn mini_modal_btn" data-modal-id="#city_modal2">Выбрать другой</button>
+								</div>
+							</div>
+
+							<div class="mini_modal" id="city_modal2">
+								<button class="close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+								</button>
+
+								<div class="title">Укажите ваш город</div>
+
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Введите название города">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.png" alt="">
+									</button>
+								</form>
+
+								<div class="example">
+									<div class="label">Например:</div>
+
+									<div class="vals">
+										<div><button>Москва</button></div>
+										<div><button>Челябинск</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h1 class="page_title">Полезные статьи о строительстве домов</h1>
+
+						<div class="tags">
+							<div class="label">Популярные теги:</div>
+
+							<div class="val">
+								<div><a href="/">Дизайн интерьера</a></div>
+								<div><a href="/">Строительные материалы</a></div>
+								<div><a href="/">Тренды</a></div>
+								<div><a href="/">Советы по декору</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="articles block">
+					<div class="cont">
+						<div class="row">
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="pagination">
+							<a class="active">1</a>
+							<a href="/">2</a>
+							<a href="/">3</a>
+							<a href="/">4</a>
+							<a href="/">5</a>
+							<a href="/">6</a>
+							<a href="/">7</a>
+							<a href="/">8</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="row">
+						<div class="copyright">&copy;2023 Mado</div>
+
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="creator">
+							Разработка сайта — <a href="/" target="_blank" rel="noopener">Алексей Комаров</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="order_modal">
+			<div class="block_head">
+				<div class="title">Рассчитайте стоимость разработки<br> <span>индивидуального проекта</span> вашего дома</div>
+
+				<div class="desc">Оставьте ваши контакты, наш специалист ответит на все ваши вопросы</div>
+			</div>
+
+			<form action="" class="form custom_submit">
+				<div class="line messengers">
+					<div class="label">Как с вами связаться:</div>
+
+					<div class="field">
+						<label>
+							<input type="radio" name="messenger" checked>
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<div>Телефон</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								<div>whatsapp</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								<div>telegram</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_viber"></use></svg>
+								<div>viber</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="line">
+						<div class="label">Укажите ваш телефон:</div>
+
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="+7 (___) ___-__-__">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="label">Как вас зовут?</div>
+
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="">
+						</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Рассчитать стоимость</button>
+
+					<div class="agree">
+						<label class="checkbox">
+							<input type="checkbox" name="agree" checked>
+
+							<div class="check">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<div>Я принимаю <a href="/" target="_blank">соглашение об обработке</a><br> и <a href="/" target="_blank">использовании персональных данных</a></div>
+						</label>
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal success" id="success_modal">
+			<div class="block_head">
+				<div class="title">Мы получили <span>вашу заявку</span></div>
+
+				<div class="desc">Наш специалист свяжется с вами в ближайшее время</div>
+			</div>
+
+			<div class="image">
+				<img data-src="images/tmp/success_modal.jpg" alt="" class="lazyload">
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

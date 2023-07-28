@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#382312">
+		<meta name="theme-color" content="#382312">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" async>
+		<link rel="stylesheet" href="css/swiper.css" async>
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/ion.rangeSlider.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<aside>
+					<a href="/" class="logo">
+						<img src="images/logo.svg" alt="">
+					</a>
+
+					<div class="mob messengers">
+						<a href="tel:+78123542175">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone2"></use></svg>
+						</a>
+
+						<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+						</a>
+
+						<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+						</a>
+					</div>
+
+					<button class="mob_menu_btn">
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						<svg class="icon"><use xlink:href="images/sprite.svg#ic_close2"></use></svg>
+					</button>
+
+					<div class="menu">
+						<div><a href="/">Главная</a></div>
+						<div><a href="/">Типовые проекты</a></div>
+						<div><a href="/">О компании</a></div>
+						<div><a class="active">Полезные статьи</a></div>
+						<div><a href="/">Контакты</a></div>
+					</div>
+
+					<div class="bottom">
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+78123542175">+7 812 354 21 75</a>
+							</div>
+
+							<div class="messengers">
+								<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow" class="_link">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<button class="calc_btn modal_btn" data-modal="order_modal">Рассчитать проект</button>
+					</div>
+				</aside>
+
+
+				<section class="page_head">
+					<div class="cont row">
+						<div class="breadcrumbs">
+							<a href="/">Полезные статьи</a> <span class="mob_hide">/</span>
+							<span class="current mob_hide">Фахверковый дом: хайп или альтернатива квартире?</span>
+						</div>
+
+						<div class="city modal_cont">
+							<div class="label">Ваш город:</div>
+
+							<button class="btn mini_modal_btn" data-modal-id="#city_modal">Санкт-Петербург</button>
+
+							<div class="mini_modal" id="city_modal">
+								<button class="close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+								</button>
+
+								<div class="title">Ваш город Москва?</div>
+
+								<div class="btns">
+									<button class="btn bg close_btn">Да, верно</button>
+
+									<button class="btn mini_modal_btn" data-modal-id="#city_modal2">Выбрать другой</button>
+								</div>
+							</div>
+
+							<div class="mini_modal" id="city_modal2">
+								<button class="close_btn">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+								</button>
+
+								<div class="title">Укажите ваш город</div>
+
+								<form action="">
+									<input type="text" name="" value="" class="input" placeholder="Введите название города">
+
+									<button type="submit" class="submit_btn">
+										<img src="images/ic_search.png" alt="">
+									</button>
+								</form>
+
+								<div class="example">
+									<div class="label">Например:</div>
+
+									<div class="vals">
+										<div><button>Москва</button></div>
+										<div><button>Челябинск</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h1 class="page_title">Фахверковый дом: хайп или<br> альтернатива квартире?</h1>
+					</div>
+				</section>
+
+
+				<section class="article_info block">
+					<div class="cont">
+						<div class="text_block">
+							<p>В статье сравниваем цену на квартиру и строительство своего дома. Ищем плюсы и минусы фахверка.</p>
+
+							<img src="images/tmp/text_img.jpg" alt="">
+
+							<h2>Вспомним как <span>все начиналось...</span></h2>
+
+							<p>Мы привыкли думать, будто бы свой дом — хлопотное и дорогое удовольствие. Поэтому при выборе недвижимости чаще останавливаемся на покупке квартиры, в крайнем случае, дачи. Это более привычный и понятный формат жилья. Конечно, есть еще такие факторы, как инфраструктура, транспортная доступность. Но 73% россиян ответили, что не могут позволить себе частный дом только из-за нехватки денег.</p>
+
+							<p>Заметили, что в последние 3-4 года в Сети появилось много роликов, в которых авторы рассказывают про фахверковые дома.</p>
+
+							<blockquote>Фахверк — строительная конструкция, в которой несущая основа здания это каркас из вертикальных деревянных столбов и балок под наклоном. Балки видны с фасада дома и придают ему характерный вид.</blockquote>
+
+							<p>Один из главных популяризаторов фахверка в России Сергей Домогацкий, на своем канале в YouTube сравнивает стоимость квартиры в Балашихе и фахверкового дома его строительной компании.</p>
+
+							<div class="gallery">
+								<div class="row">
+									<a href="images/tmp/gallery_thumb1.jpg" class="fancy_img" data-fancybox="gallery">
+										<div class="thumb">
+											<img data-src="images/tmp/gallery_thumb1.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="caption">
+											<u>Фахверковый дом площадью 160 м2</u>
+										</div>
+									</a>
+
+									<a href="images/tmp/gallery_thumb2.jpg" class="fancy_img" data-fancybox="gallery">
+										<div class="thumb">
+											<img data-src="images/tmp/gallery_thumb2.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="caption">
+											<u>Двухэтажный дом в стиле Фахверк</u>
+										</div>
+									</a>
+								</div>
+							</div>
+
+							<h2>Получается, что <em>фахверковый дом построить</em> выгоднее, чем купить трехкомнатную квартиру?</h2>
+
+							<blockquote>Фахверк появился в 14 веке в Германии и быстро стал популярен в Европе из-за своей дешевизны и прочности. Если были в странах северной Европы, то, наверняка, помните их уютные 2-3 этажные дома с балками и черепичными крышами. Будто бы из сказок Андерсена и Братьев Гримм. Это и есть классический фахверк.</blockquote>
+
+							<img src="images/tmp/text_img2.jpg" alt="">
+
+							<p>Самый старый из фахверков Германии находится в Кведлинбурге. По одним данным дендрохронологии, этот дом построен из дерева, срубленного в 1310-х годах, по другим — в 1346 - 49-х. Внутри — музей фахверка.</p>
+
+							<p>В России фахверк не смог бы прижиться, если бы не современные технологии строительства. Теперь можно утеплить конструкцию дома так, чтобы даже в январские морозы было не холодно ходить по полу босиком. Ставишь тройные стеклопакеты, CLT панели, сэндвич-панели, щиты, утепляешь пол.</p>
+
+							<p>Короче говоря, строители адаптировали старинную технологию под современные реалии и российский климат.</p>
+
+							<div class="gallery">
+								<div class="row">
+									<a href="images/tmp/gallery_thumb3.jpg" class="small fancy_img" data-fancybox="gallery2">
+										<div class="thumb blackout">
+											<img data-src="images/tmp/gallery_thumb3.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="caption">Подпись к фото</div>
+									</a>
+
+									<a href="images/tmp/gallery_thumb4.jpg" class="small fancy_img" data-fancybox="gallery2">
+										<div class="thumb blackout">
+											<img data-src="images/tmp/gallery_thumb4.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="caption">Подпись к фото</div>
+									</a>
+
+									<a href="images/tmp/gallery_thumb5.jpg" class="small fancy_img" data-fancybox="gallery2">
+										<div class="thumb blackout">
+											<img data-src="images/tmp/gallery_thumb5.jpg" alt="" class="lazyload">
+										</div>
+
+										<div class="caption">Подпись к фото</div>
+									</a>
+								</div>
+							</div>
+
+							<h2>Чем хорош <span>фахверк?</span></h2>
+
+							<ul>
+								<li>Он прочный. В процессе строительства все детали соединяются между собой и создают единую конструкцию, способную простоять десятки лет. В Германии есть фахверковые дома, которым 400 лет.</li>
+
+								<li>Много естественного света. Площадь остекления у фахверка иногда достигает 75% площади поверхности стен. Получится, что одна стена полностью прозрачная. А представьте, если эта стена выходит на опушку леса...</li>
+
+								<li>Быстро строить. По типовому проекту бригада строителей соберет фахверковый дом за 2-3 месяца в любое время года.</li>
+
+								<li>Для строительства не нужно много рабочих и тяжелая техника.</li>
+
+								<li>Усадка 1%. К отделке фасадов и помещений можно приступать сразу после сборки конструкции.</li>
+
+								<li>Экологичный. Обычно фахверковые дома строят из клееного бруса. Он расходуется в меньшем объеме, чем цельная древесина, да и самого дерева на строительство уходит меньше.</li>
+							</ul>
+
+							<div class="slider">
+								<div class="swiper">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="image">
+												<img data-src="images/tmp/text_slider_img.jpg" alt="" class="swiper-lazy">
+											</div>
+										</div>
+									</div>
+
+									<div class="swiper-button-prev">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+
+									<div class="swiper-button-next">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+									</div>
+
+									<div class="swiper-pagination"></div>
+								</div>
+							</div>
+
+							<h2>Минусы <span>фахверка</span></h2>
+
+							<p>Есть первый очевидный — для строительства дома нужен свой участок. Второй минус, по мнению экспертов Домогацкого и основателя GOOD WOOD Александра Дубовенко, высокие затраты на отопление, если вы решите построить такой дом, ну скажем, в Якутске. Поэтому фахверк популярен в регионах с более теплым климатом.</p>
+
+							<p>Выходит, что ютубный ажиотаж насчет фахверка — не пустой хайп, а реальная альтернатива квартире. Возможность жить в просторном доме на природе, не потратив при этом бешеных миллионов.</p>
+
+							<p>Посмотрим, как будет распространяться фахверк в России и будет ли вообще.</p>
+
+							<p>P.S.: Один из наших менеджеров, уже после публикации статьи, всерьез задумался о продаже квартиры в Москве и переезде в фахверковый дом. Мы меняем судьбы людей! :)</p>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="articles block">
+					<div class="cont">
+						<div class="block_head border">
+							<div class="title">Вам может <span>быть интересно</span></div>
+						</div>
+
+						<div class="row">
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb1.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Дом в стиле фахверк: долго и счастливо</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Термин фахверк (Fachwerk) произошел от слов Fach (секция или панель) и Werk (сооружение). Принято считать, что стиль зародился в XV веке.</p>
+								</div>
+							</div>
+
+							<div class="article">
+								<a href="/" class="thumb">
+									<img data-src="images/tmp/article_thumb2.jpg" alt="" class="lazyload">
+								</a>
+
+								<div class="name">
+									<a href="/">Что такое фахверковый дом, чем он отличается от обычного..</a>
+								</div>
+
+								<div class="desc text_block">
+									<p>Фахверковые дома, как старинной, так и современной постройки, можно видеть во многих странах — в Германии, Австрии, Швейцарии, Франции, Нидерландах, Чехии и др.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="row">
+						<div class="copyright">&copy;2023 Mado</div>
+
+						<div class="privacy_policy_link">
+							<a href="/">Политика конфиденциальности</a>
+						</div>
+
+						<div class="creator">
+							Разработка сайта — <a href="/" target="_blank" rel="noopener">Алексей Комаров</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="order_modal">
+			<div class="block_head">
+				<div class="title">Рассчитайте стоимость разработки<br> <span>индивидуального проекта</span> вашего дома</div>
+
+				<div class="desc">Оставьте ваши контакты, наш специалист ответит на все ваши вопросы</div>
+			</div>
+
+			<form action="" class="form custom_submit">
+				<div class="line messengers">
+					<div class="label">Как с вами связаться:</div>
+
+					<div class="field">
+						<label>
+							<input type="radio" name="messenger" checked>
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_phone"></use></svg>
+								<div>Телефон</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_whatsapp"></use></svg>
+								<div>whatsapp</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_telegram"></use></svg>
+								<div>telegram</div>
+							</div>
+						</label>
+
+						<label>
+							<input type="radio" name="messenger">
+
+							<div>
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_viber"></use></svg>
+								<div>viber</div>
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="columns">
+					<div class="line">
+						<div class="label">Укажите ваш телефон:</div>
+
+						<div class="field">
+							<input type="tel" name="" value="" class="input" placeholder="+7 (___) ___-__-__">
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="label">Как вас зовут?</div>
+
+						<div class="field">
+							<input type="text" name="" value="" class="input" placeholder="">
+						</div>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Рассчитать стоимость</button>
+
+					<div class="agree">
+						<label class="checkbox">
+							<input type="checkbox" name="agree" checked>
+
+							<div class="check">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<div>Я принимаю <a href="/" target="_blank">соглашение об обработке</a><br> и <a href="/" target="_blank">использовании персональных данных</a></div>
+						</label>
+					</div>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal success" id="success_modal">
+			<div class="block_head">
+				<div class="title">Мы получили <span>вашу заявку</span></div>
+
+				<div class="desc">Наш специалист свяжется с вами в ближайшее время</div>
+			</div>
+
+			<div class="image">
+				<img data-src="images/tmp/success_modal.jpg" alt="" class="lazyload">
+			</div>
+		</section>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.6.3.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/nice-select2.js"></script>
+		<script src="js/ion.rangeSlider.min.js"></script>
+		<script src="js/imask.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

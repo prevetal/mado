@@ -1,0 +1,128 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #382312;
+
+    top: auto;
+    bottom: 100%;
+
+    display: flex;
+
+    width: 50px;
+    height: 50px;
+    margin: 0 0 24px;
+
+    transition: .2s linear;
+    transform: none;
+
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 8px 0 #f0e8e0;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    right: 60px;
+    left: auto;
+}
+
+.swiper-button-next
+{
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next .icon,
+.swiper-button-prev .icon
+{
+    display: block;
+
+    width: 8px;
+    height: 16px;
+}
+
+.swiper-button-next .icon
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover
+{
+    background: #c2b19c;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 6px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 6px;
+    height: 6px;
+
+    transition: .2s linear;
+    pointer-events: auto;
+
+    opacity: 1;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .60);
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 10px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
