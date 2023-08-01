@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			slideVisibleClass: 'visible',
 			spaceBetween: 0,
 			slidesPerView: 1,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
 			preloadImages: false,
 			lazy: {
 				enabled: true,
@@ -99,11 +103,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			breakpoints: {
 				0: {
 					spaceBetween: 10,
-					slidesPerView: 1
+					slidesPerView: el.classList.contains('big') ? 2 : 1
 				},
 				768: {
 					spaceBetween: 24,
-					slidesPerView: 3
+					slidesPerView: el.classList.contains('big') ? 2 : 3
 				},
 				1024: {
 					spaceBetween: 20,
@@ -487,4 +491,11 @@ window.addEventListener('resize', function () {
 			fakeResize2 = true
 		}
 	}
+})
+
+
+window.addEventListener('scroll', function () {
+	$(window).scrollTop() > 0
+		? $('aside').addClass('stuck')
+		: $('aside').removeClass('stuck')
 })

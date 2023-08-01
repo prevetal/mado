@@ -1299,6 +1299,11 @@ aside .calc_btn:hover
     margin-top: 22px;
 }
 
+.page_title b
+{
+    font-weight: 500;
+}
+
 
 .page_head .tags
 {
@@ -1684,6 +1689,12 @@ aside .calc_btn:hover
     height: 24px;
 }
 
+.form .messengers label .icon.mini
+{
+    width: 19px;
+    height: 19px;
+}
+
 .form .messengers label .icon + *
 {
     width: calc(100% - 34px);
@@ -1763,6 +1774,12 @@ aside .calc_btn:hover
 }
 
 
+.text_block .big
+{
+    font-size: 16px;
+}
+
+
 .text_block > *,
 .text_block blockquote > *,
 .text_block q > *
@@ -1801,6 +1818,7 @@ aside .calc_btn:hover
 .text_block h2 em
 {
     color: #947b6d;
+    font-size: 32px;
     font-style: italic;
 }
 
@@ -3301,9 +3319,10 @@ aside .calc_btn:hover
     height: 100%;
 
     content: '';
+    transition: background .2s linear;
 
     border-radius: 8px;
-    background: linear-gradient(0deg, rgba(56, 35, 18, .20) 0%, rgba(56, 35, 18, .20) 100%);
+    background: rgba(56, 35, 18, .20);
 }
 
 
@@ -3336,6 +3355,9 @@ aside .calc_btn:hover
     height: 80px;
     margin: auto;
 
+    transition: .2s linear;
+    transition-property: width, height;
+
     border-radius: 50%;
     background: rgba(255, 255, 255, .44);
 
@@ -3353,6 +3375,54 @@ aside .calc_btn:hover
 
     width: 28px;
     height: 28px;
+}
+
+
+.about_block .video_link:hover .thumb:before
+{
+    background: rgba(56, 35, 18, .50);
+}
+
+.about_block .video_link:hover .thumb .icon
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.about_block .mob_link
+{
+    display: none;
+
+    margin-top: 30px;
+}
+
+
+.about_block .mob_link a
+{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: inline-block;
+
+    padding: 20px 30px;
+
+    transition: background .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    border-radius: 8px;
+    background: #382312;
+}
+
+.about_block .mob_link a:hover
+{
+    background: #5c3c22;
 }
 
 
@@ -3419,7 +3489,7 @@ aside .calc_btn:hover
     content: '';
     transition: background .2s linear;
 
-    border-radius: inherit;
+    border-radius: 15px;
     background: rgba(56, 35, 18, .3);
 }
 
@@ -3436,7 +3506,7 @@ aside .calc_btn:hover
     width: 100%;
     height: 100%;
 
-    border-radius: inherit;
+    border-radius: 15px;
 
     object-fit: cover;
 }
@@ -4372,7 +4442,7 @@ aside .calc_btn:hover
 
 .contacts_info .data
 {
-    width: 285px;
+    width: 295px;
     max-width: 100%;
 
     align-self: center;
@@ -4384,10 +4454,14 @@ aside .calc_btn:hover
     margin-bottom: 30px;
 }
 
-.contacts_info .block_head .title,
+.contacts_info .block_head .title
+{
+    font-size: 36px;
+}
+
 .contacts_info .block_head .title span
 {
-    font-size: 32px;
+    font-size: 33px;
 }
 
 
@@ -4458,7 +4532,7 @@ aside .calc_btn:hover
 
     overflow: hidden;
 
-    width: calc(100% - 305px);
+    width: calc(100% - 315px);
     height: 349px;
 
     border-radius: 15px;
