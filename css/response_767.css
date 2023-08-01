@@ -118,6 +118,12 @@
         height: 18px;
     }
 
+    aside .messengers :first-child .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
 
 
     /*---------------
@@ -1018,6 +1024,12 @@
     .project_info
     {
         margin-top: -20px;
+    }
+
+
+    .project_info .head
+    {
+        margin-bottom: 30px;
     }
 
 

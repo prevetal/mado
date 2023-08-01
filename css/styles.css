@@ -1666,6 +1666,7 @@ aside .calc_btn:hover
 {
     display: flex;
 
+    min-height: 52px;
     padding: 13px 15px;
 
     transition: .2s linear;
@@ -1818,6 +1819,7 @@ aside .calc_btn:hover
 .text_block h2 em
 {
     color: #947b6d;
+    font-family: var(--font_family3);
     font-size: 32px;
     font-style: italic;
 }
@@ -2185,6 +2187,9 @@ aside .calc_btn:hover
 
 .first_section .city
 {
+    position: relative;
+    z-index: 9;
+
     display: flex;
 
     margin-left: auto;
