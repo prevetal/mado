@@ -3538,6 +3538,7 @@ aside .calc_btn:hover
     width: 100%;
     padding: 20px;
 
+    border-radius: 15px;
     background: linear-gradient(360deg, #382312 0%, rgba(56, 35, 18, .00) 100%);
 
     justify-content: flex-start;
